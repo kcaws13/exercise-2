@@ -1,0 +1,42 @@
+.identitas {position: relative;
+    width: 255px;
+    height: 308px;
+    margin-top: 75px;
+    
+    background: url(profil.jpg);
+    border-radius: 124px;}
+
+.profil {position: absolute;
+    width: 496px;
+    height: 196px;
+    left: 449px;
+    top: 103px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 36px;
+    
+    color: #000000;
+    }
+.background { background-color: rgba(32, 154, 206, 0.56); height: 500px; }
+.ig {position: absolute;
+    width: 72px;
+    height: 72px;
+    left: 449px;
+    top: 300px;}
+.id {position: absolute;
+    width: 186px;
+    height: 23px;
+    left: 544px;
+    top: 312px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 24px;
+    
+    color: #000000;
+    }
