@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="kalkulator.js" > </script>
+    <Script>
+         function insert(num) {
+         document.form.textview.value = document.form.textview.value + num;
+     }
+     function jumlah() {
+         var total = document.form.textview.value;
+         if (total) {
+             document.form.textview.value = eval(total);
+         }
+     }
+     function clean() {
+         document.form.textview.value = "";
+     }
+     function back() {
+         var total = document.form.textview.value;
+         document.form.textview.value = total.substring(0, total.length - 1);
+     } 
+    
+         </Script>
+    <link rel="stylesheet" href="kalkulator.css">
+    
+    <title>kalkulator exercise 2</title>
+</head>
+<body class="BG">
+       
+            
+    <div class="container">
+    <div class="main">
+        <h1 class= "text">KALKULATOR</h1>
+    <form name="form">
+            <input class="textview" name="textview">
+             </form>
+             
+             <table>
+            <tr> 
+                <td><input class="button" type="button" value="C" onclick="clean()"></td>
+                <td><input class="button"type="button" value="back" style="font-size: 12px" onclick="back()"></td>
+                <td><input class="button"type="button" value="/" onclick="insert('/')"></td>
+                <td><input class="button"type="button" value="x" onclick="insert('*')"></td>
+            </tr>
+
+            <tr> 
+                    <td><input class="button" type="button" value="7" onclick="insert(7)"></td>
+                    <td><input class="button" type="button" value="8" onclick="insert(8)"></td>
+                    <td><input class="button" type="button" value="9" onclick="insert(9)"></td>
+                    <td><input class="button" type="button" value="+" onclick="insert('+')"></td>
+            </tr>
+
+            <tr> 
+                    <td><input class="button" type="button" value="4" onclick="insert(4)"></td>
+                    <td><input class="button" type="button" value="5" onclick="insert(5)"></td>
+                    <td><input class="button" type="button" value="6" onclick="insert(6)"></td>
+                    <td><input class="button" type="button" value="-" onclick="insert('-')"></td>
+            </tr>
+            <tr> 
+                    <td><input class="button" type="button" value="1" onclick="insert(1)"></td>
+                    <td><input class="button" type="button" value="2" onclick="insert(2)"></td>
+                    <td><input class="button" type="button" value="3" onclick="insert(3)"></td>
+                    <td><input class="button" type="button" value="." onclick="insert('.')"></td>
+            </tr>
+            <tr>
+                    <td><input class="button" type="button" value="0" onclick="insert(0)"></td>
+                    <td><input class="button" type="button" value="00" onclick="insert('00')"></td>
+                    <td colspan=2><input class="button" style="width:107px" type="button" value="=" onclick="jumlah()"></td>
+                    
+                </tr>
+             </table>
+       
+    </div>
+    </div>
+    <footer style="text-align:center; background-color:rgba(0, 0, 0, 0); color: rgb(203, 216, 218)">
+            <p>Jl.Pertanian II, Lebak Bulus, Rt.005/Rw.004, NO.44, Jakarta, 12440</p>
+        </footer>
+</body>
+</html>
